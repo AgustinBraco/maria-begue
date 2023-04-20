@@ -5,8 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { CustomProvider } from './context/context.jsx';
 
 // Roots
-import Root from './routes/root';
-import ErrorRoot from './routes/error';
+import ErrorRoot from './routes/error.jsx';
+import Root from './routes/root.jsx';
+import TycRoot from './routes/tyc.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+  },
+  {
+    path: "/tyc",
+    element: <TycRoot />,
   },
 ]);
 
