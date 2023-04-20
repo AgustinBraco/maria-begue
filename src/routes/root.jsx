@@ -1,11 +1,13 @@
-import NavBar from "../components/navbar/navbar.jsx";
+import Header from "../components/header/header.jsx";
+import Footer from "../components/footer/footer.jsx";
 import Home from "../components/home/home.jsx";
 
 function Root() {
   return (
   <div>
-    <NavBar />
+    <Header />
     <Home />
+    <Footer />
   </div>
   );
 };
