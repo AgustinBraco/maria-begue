@@ -17,7 +17,6 @@ html {
 /* Colors */
 :root {
   --color-lblue: #38B6FF;
-  --color-eblue: #33CCCC;
   --color-grey: #2F2E2E;
   --color-black: #000000;
   --color-white: #FFFFFF;
@@ -46,9 +45,57 @@ header .header-logo {
   width: 15rem;
   margin: 2rem;
 }
-header .header-menu-mobile {
+header .header-menu-mobile-button {
+  background-color: transparent;
+  border: none;
+}
+header .header-menu-mobile-button .header-menu-mobile {
   width: 3.5rem;
   margin: 2rem;
+}
+header .header-menu-mobile-close-button {
+  background-color: transparent;
+  border: none;
+  padding: 0.7rem;
+}
+header .header-menu-mobile-close-button .header-menu-mobile-close {
+  width: 2rem;
+  margin: 2rem;
+}
+header .nav-bar-container {
+  display: none;
+}
+header .nav-bar-container .nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--color-white);
+  position: absolute;
+  padding-top: 2rem;
+  left: 0;
+  top: 8rem;
+  list-style: none;
+}
+header .nav-bar-container .nav-bar .nav-bar-link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--color-lblue);
+  background-color: var(--color-white);
+  font-weight: 700;
+}
+header .nav-bar-container .nav-bar .nav-bar-link-lblue {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--color-white);
+  background-color: var(--color-lblue);
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+header .open-navbar {
+  display: flex;
 }
 
 footer {
@@ -95,9 +142,10 @@ footer .footer-link {
   font-size: 2.5rem;
   width: 10rem;
   text-align: center;
-  border-radius: 2rem;
-  background-color: var(--color-eblue);
-  color: var(--color-black);
+  border-radius: 1rem;
+  background-color: var(--color-lblue);
+  color: var(--color-white);
+  font-weight: 600;
   text-decoration: none;
 }
 
